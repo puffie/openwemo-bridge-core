@@ -4,6 +4,8 @@
 
 This repository provides a local LAN control layer for WeMo devices and is designed to be used by a Matter bridge.
 
+Matter bridge integration (Google Home / Home app bridge flow) is planned for a future release of this project.
+
 ## What Is Included
 
 - `wemo_ctrl/`: daemon for discovery, SOAP control, subscriptions, and IPC
@@ -24,6 +26,11 @@ You also need `libupnp` + `ixml` headers/libs available either:
 
 - from a local source tree at `../../libupnp-1.14.0` (default in current Makefiles), or
 - installed under standard system paths (`/usr/local/include`, `/usr/local/lib`).
+
+Hardware target note:
+
+- You can run this project on Raspberry Pi devices, including Raspberry Pi Zero models, as long as toolchain and dependency requirements are met.
+- For Pi Zero class hardware, expect slower build/test times and prefer lightweight runtime settings.
 
 ## Build
 
@@ -132,6 +139,7 @@ These scripts expect local build artifacts and typically start/stop `wemo_ctrl` 
 
 ## Matter Bridge Integration Notes
 
+- Full Matter bridge packaging/integration is planned for a future release.
 - Keep `wemo_ctrl` running continuously.
 - Have bridge process link to `wemo_engine` or talk to IPC endpoint.
 - Use WeMo `UDN` as stable identity key and persist endpoint mapping on the bridge side.
