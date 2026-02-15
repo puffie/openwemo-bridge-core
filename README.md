@@ -6,6 +6,11 @@ This repository provides a local LAN control layer for WeMo devices and is desig
 
 Matter bridge integration (Google Home / Home app bridge flow) is planned for a future release of this project.
 
+## Development Notes
+
+- This project was developed with Codex assistance.
+- The included `AGENTS.md` is optional guidance and can be used however it best fits your workflow.
+
 ## What Is Included
 
 - `wemo_ctrl/`: daemon for discovery, SOAP control, subscriptions, and IPC
