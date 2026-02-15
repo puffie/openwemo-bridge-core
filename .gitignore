@@ -1,0 +1,14 @@
+# Build artifacts
+*.o
+*.a
+*.so
+
+# Executables built in-tree
+wemo_client/wemo_client
+wemo_ctrl/wemo_ctrl
+
+# Optional local runtime files
+*.log
+
+# Prevent accidental nested repo copy
+/wemo-upnp/
