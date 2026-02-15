@@ -1,6 +1,6 @@
 # OpenWeMo Bridge Core
 
-`OpenWeMo Bridge Core` is the public-facing name for this project.
+`OpenWeMo Bridge Core` is the project name.
 
 This repository provides a local LAN control layer for WeMo devices and is designed to be used by a Matter bridge.
 
